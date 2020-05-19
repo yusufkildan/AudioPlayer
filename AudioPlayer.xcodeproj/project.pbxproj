@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F177C862247033D100FAB092 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F177C861247033D100FAB092 /* Parser.swift */; };
+		F177C8642470428F00FAB092 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F177C8632470428F00FAB092 /* ParserError.swift */; };
+		F177C86624708E9200FAB092 /* ParserPacketCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F177C86524708E9200FAB092 /* ParserPacketCallback.swift */; };
+		F177C86824708F4200FAB092 /* ParserPropertyChangeCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F177C86724708F4200FAB092 /* ParserPropertyChangeCallback.swift */; };
 		F1975C9C24702BAB00601954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975C9B24702BAB00601954 /* AppDelegate.swift */; };
 		F1975C9E24702BAB00601954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975C9D24702BAB00601954 /* SceneDelegate.swift */; };
 		F1975CA024702BAB00601954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975C9F24702BAB00601954 /* ViewController.swift */; };
 		F1975CA324702BAB00601954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1975CA124702BAB00601954 /* Main.storyboard */; };
 		F1975CA524702BAC00601954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1975CA424702BAC00601954 /* Assets.xcassets */; };
 		F1975CA824702BAC00601954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1975CA624702BAC00601954 /* LaunchScreen.storyboard */; };
+		F1975CB124702C4F00601954 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975CB024702C4F00601954 /* Downloader.swift */; };
+		F1975CB424702C9E00601954 /* DownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975CB324702C9E00601954 /* DownloaderDelegate.swift */; };
+		F1975CB624702CD100601954 /* DownloaderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1975CB524702CD100601954 /* DownloaderState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F177C861247033D100FAB092 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		F177C8632470428F00FAB092 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		F177C86524708E9200FAB092 /* ParserPacketCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserPacketCallback.swift; sourceTree = "<group>"; };
+		F177C86724708F4200FAB092 /* ParserPropertyChangeCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserPropertyChangeCallback.swift; sourceTree = "<group>"; };
 		F1975C9824702BAB00601954 /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1975C9B24702BAB00601954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1975C9D24702BAB00601954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		F1975CA424702BAC00601954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1975CA724702BAC00601954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1975CA924702BAC00601954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1975CB024702C4F00601954 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		F1975CB324702C9E00601954 /* DownloaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderDelegate.swift; sourceTree = "<group>"; };
+		F1975CB524702CD100601954 /* DownloaderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F177C8602470339D00FAB092 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				F177C861247033D100FAB092 /* Parser.swift */,
+				F177C8632470428F00FAB092 /* ParserError.swift */,
+				F177C86524708E9200FAB092 /* ParserPacketCallback.swift */,
+				F177C86724708F4200FAB092 /* ParserPropertyChangeCallback.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		F1975C8F24702BAA00601954 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +81,7 @@
 		F1975C9A24702BAB00601954 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F1975CAF24702BB600601954 /* AudioPlayer */,
 				F1975C9B24702BAB00601954 /* AppDelegate.swift */,
 				F1975C9D24702BAB00601954 /* SceneDelegate.swift */,
 				F1975C9F24702BAB00601954 /* ViewController.swift */,
@@ -65,6 +91,25 @@
 				F1975CA924702BAC00601954 /* Info.plist */,
 			);
 			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		F1975CAF24702BB600601954 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F177C8602470339D00FAB092 /* Parser */,
+				F1975CB224702C6900601954 /* Downloader */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		F1975CB224702C6900601954 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				F1975CB024702C4F00601954 /* Downloader.swift */,
+				F1975CB324702C9E00601954 /* DownloaderDelegate.swift */,
+				F1975CB524702CD100601954 /* DownloaderState.swift */,
+			);
+			path = Downloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F177C86824708F4200FAB092 /* ParserPropertyChangeCallback.swift in Sources */,
+				F1975CB624702CD100601954 /* DownloaderState.swift in Sources */,
 				F1975CA024702BAB00601954 /* ViewController.swift in Sources */,
 				F1975C9C24702BAB00601954 /* AppDelegate.swift in Sources */,
+				F1975CB124702C4F00601954 /* Downloader.swift in Sources */,
 				F1975C9E24702BAB00601954 /* SceneDelegate.swift in Sources */,
+				F177C8642470428F00FAB092 /* ParserError.swift in Sources */,
+				F1975CB424702C9E00601954 /* DownloaderDelegate.swift in Sources */,
+				F177C86624708E9200FAB092 /* ParserPacketCallback.swift in Sources */,
+				F177C862247033D100FAB092 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
